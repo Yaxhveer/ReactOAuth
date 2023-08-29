@@ -45,7 +45,7 @@ const Header: React.FC = () => {
         
         console.log(clientId);
         
-        const redirectUri = 'http://localhost:5173/profile'; 
+        const redirectUri = `${window.location.origin}/profile`; 
         const scope = 'https://www.googleapis.com/auth/userinfo.profile https://www.googleapis.com/auth/userinfo.email';
         const responseType = 'token';
 
